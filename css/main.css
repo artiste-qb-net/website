@@ -3603,3 +3603,59 @@ footer .row {
 
 
 /*# sourceMappingURL=main.css.map */
+
+.parallax-slider {
+    left: -55px!important;
+    width: 1400px!important;
+}
+
+@media screen and (min-width: 1280px) {
+    .parallax-slider{
+        height: 786px!important;
+        left: -55px!important;
+        width: 1400px!important;
+        transition: all .5s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .parallax-slider{
+        height: 786px!important;
+        transition: all .5s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1144px) {
+    .parallax-slider{
+        left: -150px!important;
+        transition: all .5s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .parallax-slider{
+        left: -250px!important;
+        transition: all .5s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .parallax-slider{
+        left: -350px!important;
+        transition: all .5s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .parallax-slider{
+        left: -450px!important;
+        transition: all .5s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .parallax-slider{
+        left: -500px!important;
+        transition: all .5s ease-in-out;
+    }
+}
