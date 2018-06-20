@@ -511,20 +511,20 @@
 
                 <h3 class="h6">Send Us A Message</h3>
 
-                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                <form name="contactForm" id="contactForm" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSdeakW4U2YOWwWNVdnGZhkpNi1xIi0ntL2e0jlLWEzz_wR3pA/formResponse?" novalidate="novalidate" target="hidden_iframe" onsubmit="this.submit(); this.reset(); return false;">
                     <fieldset>
 
                     <div class="form-field">
-                        <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                        <input name="entry.1833456165" type="text" id="entry.1833456165" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
                     </div>
                     <div class="form-field">
-                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                        <input name="entry.648588133" type="email" id="entry.648588133" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
                     </div>
                     <div class="form-field">
-                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                        <input name="entry.195633577" type="text" id="entry.195633577" placeholder="Subject" value="" class="full-width">
                     </div>
                     <div class="form-field">
-                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                        <textarea name="entry.1454890084" id="entry.1454890084" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
                     </div>
                     <div class="form-field">
                         <button class="full-width btn--primary">Submit</button>
@@ -540,6 +540,7 @@
 
                     </fieldset>
                 </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
                 <!-- contact-warning -->
                 <div class="message-warning">
@@ -692,6 +693,10 @@
     <script src="js/main.js"></script>
     <script>
         console.log("This company is part of Andtek Empire www.andtek.pro/empire");
+        $('#contactForm').on('submit', function(e) {
+          $('#contactForm *').fadeOut(2000);
+          $('#contactForm').prepend('Your submission has been processed...');
+        });
       </script>
 </body>
 
